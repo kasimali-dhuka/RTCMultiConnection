@@ -304,6 +304,7 @@ connection.onclose = connection.onerror = connection.onleave = function(event) {
 };
 
 connection.onmessage = function(event) {
+  console.log(event);
     if(event.data.showMainVideo) {
         // $('#main-video').show();
         $('#screen-viewer').css({
